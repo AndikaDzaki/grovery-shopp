@@ -1,0 +1,114 @@
+.favorite {
+    display: grid;
+    gap: 25px;
+    padding: 16px;
+  }
+  
+  .favorite-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Kartu produk akan otomatis menyesuaikan lebar dan jumlahnya */
+    gap: 25px;
+  }
+  
+  .favorite-text {
+    text-align: center;
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 16px; 
+  }
+  
+  .favorite-product-card {
+    background-color: #e0fbe2;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    animation: fadeIn 1s ease;
+    overflow: hidden;
+  }
+  
+  .favorite-product-card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .favorite-product-img-container {
+    position: relative;
+    height: 60%; /* Adjust the height of the image container */
+  }
+  
+  .favorite-product-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+  
+  .favorite-product-info {
+    padding: 20px;
+  }
+  
+  .favorite-product-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .favorite-product-name-rating p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .favorite-product-name-rating img {
+    width: 70px;
+  }
+  
+  .favorite-product-desc {
+    color: #676767;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .favorite-product-price {
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0;
+    position: relative;
+    top: -10px;
+  }
+  
+  .favorite-product-img-container .add {
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .favorite-product-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .favorite-product-counter img {
+    width: 30px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,94 @@
+.ulasan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+    background-color: #E0FBE2;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .rating-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .star {
+    font-size: 2em;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+  }
+  
+  .star.selected {
+    color: #ffcc00;
+  }
+  
+  p {
+    color: #555;
+    font-size: 1.1em;
+    text-align: center;
+  }
+  
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  input[type="file"] {
+    cursor: pointer;
+  }
+  
+  .review-photo {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .photo{
+    margin: auto;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: green;
+  }
+  

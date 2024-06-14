@@ -1,0 +1,126 @@
+.setting-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    max-width: 200px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #e0fbe2;
+  }
+  
+  .sidebar ul li.active {
+    background-color: #36db36;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .content {
+    flex: 3;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .content h3 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  form input,
+  form select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #36db36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #059b05;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .setting-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .content {
+      flex: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar ul li {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  
+    .content h3 {
+      font-size: 1.2em;
+    }
+  
+    form input,
+    form select {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  
+    form button {
+      padding: 8px 15px;
+      font-size: 0.9em;
+    }
+  }
+  
